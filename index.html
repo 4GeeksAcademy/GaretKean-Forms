@@ -20,20 +20,21 @@
   <div class="container-fluid justify-content-center border border-dark m-10 g-5">
 
     <form>
-    <!--Both of these are read-only-->
+      <!--Both of these are read-only-->
       <div class="row">
-        <input class="form-control form-control-lg fw-bold" type="text" value="Payment Form"
-          aria-label="Disabled input example" disabled readonly>
+        <input class="form-control form-control-lg fw-bold" type="text" value="Payment Form" aria-label="input example"
+          read-only>
       </div>
       <div class="row">
-        <input class="form-control form-control-sm g-3 bg-danger p-3" type="text" placeholder="Some fields are missing"
-          aria-label="Disabled input example" disabled>
+        <input class="form-control form-control-sm g-3 p-3" type="text" placeholder="Some fields are missing"
+          aria-label="input example" disabled>
       </div>
-    <!--Here are the first three number inputs for your card information-->
+      <!--Here are the first three number inputs for your card information-->
       <div class="row">
         <div class="col-md-4">
           <label for="card" class="form-label">Card #</label>
-          <input class="form-control form-control-sm" type="number" id="card" placeholder="xxxxxxxxxxxxxxx" value="" required>
+          <input class="form-control form-control-sm" type="number" id="card" placeholder="xxxxxxxxxxxxxxx" value=""
+            required>
           <!--This custom invalid feedback doesn't work without a script-->
           <div class="invalid-feedback">Please enter your 15 digits card number</div>
           <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
@@ -49,7 +50,7 @@
           </div>
         </div>
       </div>
-    <!--Simple text inputs for you to enter your name-->
+      <!--Simple text inputs for you to enter your name-->
       <div class="row">
         <div class="col-md-6">
           <label for="firstName" class="form-label">First Name</label>
@@ -60,7 +61,7 @@
           <input class="form-control form-control-sm" type="text" id="lastName" required>
         </div>
       </div>
-    <!--This is the dropdown selector to chose your state followed by your postal code. I think it should actually be a list with many options-->
+      <!--This is the dropdown selector to chose your state followed by your postal code. I think it should actually be a list with many options-->
       <div class="row">
         <div class="col-md-6">
           <label for="city" class="form-label">City</label>
@@ -75,56 +76,56 @@
             <option value="3">Florida</option>
           </select>
         </div>
-<div class="col-md-3">
+        <div class="col-md-3">
           <label for="postCode" class="form-label">Postal Code</label>
           <input class="form-control form-control-sm" type="number" id="postCode" placeholder="" required>
         </div>
       </div>
-    <!--Here are the checkboxes named by icons for payment. These do not work properly-->
+      <!--Here are the checkboxes named by icons for payment. These do not work properly-->
       <div class="row">
         <div class="col-md-6">
           <h4>We accept:</h4>
           <div class="d-inline-flex p-2 border">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="icon1" id="icon1" value="option1">
+              <input class="form-check-input" type="radio" name="icon1" id="icon1" value="option1" checked>
               <label class="form-check-label" for="icon1">
                 <i class="bi bi-piggy-bank"></i>
               </label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="icon2" id="icon2" value="option2">
+              <input class="form-check-input" type="radio" name="icon1" id="icon2" value="option2">
               <label class="form-check-label" for="icon2">
                 <i class="bi bi-currency-bitcoin"></i>
               </label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="icon3" id="icon3" value="option3">
+              <input class="form-check-input" type="radio" name="icon1" id="icon3" value="option3">
               <label class="form-check-label" for="icon3">
                 <i class="bi bi-credit-card"></i>
               </label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="icon4" id="icon4" value="option4">
+              <input class="form-check-input" type="radio" name="icon1" id="icon4" value="option4">
               <label class="form-check-label" for="icon4">
                 <i class="bi bi-alipay"></i>
               </label>
             </div>
           </div>
         </div>
-      <!--This is the text input for message-->
+        <!--This is the text input for message-->
         <div class="col-lg-6">
           <label for="floatingTextarea2">Message</label>
           <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
               style="height: 100px"></textarea>
-            </div>
+          </div>
         </div>
       </div>
       <!--     These are the submit and close buttons-->
       <div class="row">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end g-3 border p-3 bg-danger">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end g-3 border p-3">
           <button class="btn btn-secondary me-md-2" type="button">Close</button>
-          <button class="btn btn-primary" type="submit">Send</button>
+          <button class="btn btn" type="submit">Send</button>
         </div>
       </div>
 
@@ -133,27 +134,8 @@
   </div>
 </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-</body>
-
 </html>
+
+
+
+<!--I added this comment through Visual Studios via git push-->

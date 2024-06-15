@@ -1,1 +1,2 @@
-label{font-weight: bolder;}
+
+input[type="text"]:read-only{background-color:pink;}
